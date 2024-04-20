@@ -1,0 +1,30 @@
+﻿<kod_ozet>
+  <kütüphaneler>
+    <kütüphane adı="pandas" />
+    <kütüphane adı="numpy" />
+    <kütüphane adı="seaborn" />
+    <kütüphane adı="matplotlib" />
+  </kütüphaneler>
+  <veri_olusumu>
+    <veri_seti adı="df1" satır_sayısı="100" sütun_sayısı="3">
+      <sütun adı="A" veri_tipi="tamsayı" aralık="0-100" />
+      <sütun adı="B" veri_tipi="normal" ortalama="50" standart_sapma="10" />
+      <sütun adı="C" veri_tipi="kategorik" değerler="X, Y, Z" />
+    </veri_seti>
+    <veri_seti adı="df2" kaynak="https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv" />
+  </veri_olusumu>
+  <veri_inceleme>
+    <ilk_bakis veri_seti="df1" satır_sayısı="5" />
+    <ilk_bakis veri_seti="df2" satır_sayısı="5" />
+    <temel_istatistik veri_seti="df1" />
+    <temel_istatistik veri_seti="df2" />
+    <eksik_veri veri_seti="df1" />
+    <eksik_veri veri_seti="df2" />
+    <kategorik_degisken veri_seti="df1" sütun_adı="C" />
+  </veri_inceleme>
+  <veri_görselleştirme>
+    <histogram veri_seti="df1" sütunlar="tüm sayısal sütunlar" />
+    <pairplot veri_seti="df2" değişkenler="tüm sayısal değişkenler" renk="tür" />
+    <korelasyon_matrisi veri_seti="df2" />
+  </veri_görselleştirme>
+</kod_ozet>
